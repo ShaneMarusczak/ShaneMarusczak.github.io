@@ -13,6 +13,14 @@
     to{opacity: 1;}
 }
 
+#wrapper > * {
+    transition: 1.5s;
+  }
+  
+  .fadeOut {
+    opacity: 0;
+  }
+
 #wrapper{
     animation-name: animation;
     animation-duration: 4s;
