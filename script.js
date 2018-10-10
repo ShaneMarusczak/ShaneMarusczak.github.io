@@ -8,7 +8,7 @@
       console.log('scrolling...');
   
       for (let elem of fadeElements) {
-        if (elem.offsetTop + elem.offsetHeight < window.scrollY + 175) {
+        if (elem.offsetTop + elem.offsetHeight < window.scrollY + 150) {
           console.log('hide', elem);
           elem.classList.add('fadeOut');
         }
