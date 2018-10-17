@@ -115,4 +115,12 @@ footer{
     font-size: small;
 }
 
+#skills{
+    display: grid;
+    width: 25vw;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
 
