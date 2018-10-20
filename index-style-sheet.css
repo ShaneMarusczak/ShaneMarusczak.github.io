@@ -123,4 +123,10 @@ footer{
     grid-template-rows: auto auto auto;
 }
 
+#nav-button{
+    color: white;
+    background-color: transparent;
+    border: none;
+
+}
 

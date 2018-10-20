@@ -38,4 +38,19 @@
     });
   });
 
+  
+
 })();
+
+function navDisappear() {
+  var navButton = document.getElementById("nav-bar");
+  var navButtonText = document.getElementById('nav-button');
+  if (navButton.style.display === "none") {
+    navButton.style.display = "block";
+    navButtonText.innerHTML ='Hide Navigation';
+  } else {
+    navButton.style.display = "none";
+    navButtonText.innerHTML = 'Show Navigation';
+
+  }
+}
