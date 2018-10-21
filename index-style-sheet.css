@@ -121,6 +121,8 @@ footer{
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-content: center;
 }
 
 #nav-button{
@@ -145,18 +147,24 @@ footer{
     outline: none;
     font-size: 15px;
     margin: 0;
+    width: 50vw;
+    opacity: .9;
+    border-radius: 5px;
   }
 
 .active, #collapsible:hover {
-  background-color: gray;
+  background-color: darkslategray;
 }
 
 #bio {
     padding: 0 18px;
     overflow: hidden;
-    background-color:gray;
+    background-color: darkslategray;
     height: 0;
     margin: 0;
+    width: 50vw;
+    opacity: .9;
+    border-radius: 5px;
   }
 
 .BIO{
