@@ -38,19 +38,33 @@
     });
   });
 
-  
-
 })();
+
 
 function navDisappear() {
   var navButton = document.getElementById("nav-bar");
   var navButtonText = document.getElementById('nav-button');
   if (navButton.style.display === "none") {
     navButton.style.display = "block";
-    navButtonText.innerHTML ='Hide Navigation';
+    navButtonText.innerHTML = 'Hide Navigation';
   } else {
     navButton.style.display = "none";
     navButtonText.innerHTML = 'Show Navigation';
 
   }
+}
+
+function collapseFunc(){
+  var collapseButton = document.getElementById("bio");
+  var collapseButtonText = document.getElementById('collapsible');
+  if (collapseButton.style.maxHeight === "50vw") {
+    collapseButton.style.maxHeight = "0px";
+    collapseButtonText.innerHTML = 'Show Bio';
+  } else {
+    collapseButton.style.height = "auto";
+    collapseButton.style.maxHeight = "50vw";
+    collapseButtonText.innerHTML = 'Hide Bio';
+
+  }
+
 }
