@@ -1,26 +1,20 @@
 (function () {
 
   var modal = document.getElementById('myModal');
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("close")[0];
 
-var btn = document.getElementById("myBtn");
-
-
-var span = document.getElementsByClassName("close")[0];
-
-
-btn.onclick = function() {
+  btn.onclick = function () {
     modal.style.display = "block";
-}
-
-span.onclick = function() {
+  }
+  span.onclick = function () {
     modal.style.display = "none";
-}
-
-window.onclick = function(event) {
+  }
+  window.onclick = function (event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+      modal.style.display = "none";
     }
-}
+  }
 
   const fadeElements = document.querySelectorAll('#wrapper > *');
   console.log({ fadeElements });
@@ -75,7 +69,7 @@ function navDisappear() {
   }
 }
 
-function collapseFunc(){
+function collapseFunc() {
   var collapseButton = document.getElementById("bio");
   var collapseButtonText = document.getElementById('collapsible');
   if (collapseButton.style.maxHeight === "50vw") {
