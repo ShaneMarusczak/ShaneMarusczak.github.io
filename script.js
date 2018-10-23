@@ -72,12 +72,12 @@ function navDisappear() {
 function collapseFunc() {
   var collapseButton = document.getElementById("bio");
   var collapseButtonText = document.getElementById('collapsible');
-  if (collapseButton.style.maxHeight === "50vw") {
+  if (collapseButton.style.maxHeight === "17rem") {
     collapseButton.style.maxHeight = "0px";
     collapseButtonText.innerHTML = 'Show Bio';
   } else {
     collapseButton.style.height = "auto";
-    collapseButton.style.maxHeight = "50vw";
+    collapseButton.style.maxHeight = "17rem";
     collapseButtonText.innerHTML = 'Hide Bio';
 
   }
