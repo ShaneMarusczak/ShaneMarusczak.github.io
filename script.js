@@ -83,3 +83,32 @@ function collapseFunc() {
   }
 
 }
+
+
+var slideIndex = [1,1,1,1];
+var slideId = ["vpscreenshot", "vpsscreenshot", "vpascreenshot", "springscreenshot"]
+showDivs(1,0);
+showDivs(1,1);
+showDivs(1,2);
+showDivs(1,3);
+
+function plusDivs(n, num) {
+    showDivs(slideIndex[num] += n, num);
+}
+
+function showDivs(n, num) {
+    var i;
+    var x = document.getElementsByClassName(slideId[num]);
+    if (n > x.length) {slideIndex[num] = 1} 
+    if (n < 1) {slideIndex[num] = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex[num]-1].style.display = "block"; 
+}
+
+
+
+
+
+
