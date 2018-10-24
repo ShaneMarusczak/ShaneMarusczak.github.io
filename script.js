@@ -97,14 +97,13 @@ function plusDivs(n, num) {
 }
 
 function showDivs(n, num) {
-    var i;
-    var x = document.getElementsByClassName(slideId[num]);
-    if (n > x.length) {slideIndex[num] = 1} 
-    if (n < 1) {slideIndex[num] = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+    var list = document.getElementsByClassName(slideId[num]);
+    if (n > list.length) {slideIndex[num] = 1} 
+    if (n < 1) {slideIndex[num] = list.length} ;
+    for (var i = 0; i < list.length; i++) {
+        list[i].style.display = "none"; 
     }
-    x[slideIndex[num]-1].style.display = "block"; 
+    list[slideIndex[num]-1].style.display = "block"; 
 }
 
 
