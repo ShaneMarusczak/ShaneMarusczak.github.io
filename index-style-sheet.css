@@ -226,6 +226,7 @@ footer{
 .spring-display-left:hover,
 .spring-display-right:hover{
     cursor: pointer;
+    opacity: 1;
 }
 
 .virtual-pet-display-left,
@@ -241,7 +242,7 @@ footer{
     border: none;
     font-size: large;
     width: 10vw;
-    position: sticky;
+    border-radius: 5px;
 }
 #vp-pics{
     display: grid;
