@@ -248,3 +248,19 @@ footer{
 .directional{
     display: inline;
 }
+
+#springpictures{
+    height: 441px;
+}
+
+#vpapictures{
+    height:501px;
+}
+
+#vpspictures{
+    height: 503px;
+}
+
+#vppictures{
+    height: 501px;
+}
