@@ -244,11 +244,6 @@ footer{
     width: 10vw;
     border-radius: 5px;
 }
-#vp-pics{
-    display: grid;
-    grid-column: 1/ span 3;
-    grid-row: 1;
-}
 
 .directional{
     display: inline;
