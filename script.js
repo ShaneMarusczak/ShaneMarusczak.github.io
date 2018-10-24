@@ -98,8 +98,12 @@ function plusDivs(n, num) {
 
 function showDivs(n, num) {
     var list = document.getElementsByClassName(slideClass[num]);
-    if (n > list.length) {slideIndex[num] = 1} 
-    if (n < 1) {slideIndex[num] = list.length} ;
+    if (n > list.length) {
+      slideIndex[num] = 1
+    } 
+    if (n < 1) {
+      slideIndex[num] = list.length
+    };
     for (var i = 0; i < list.length; i++) {
         list[i].style.display = "none"; 
     }
