@@ -160,7 +160,7 @@ footer{
     padding: 0 18px;
     overflow: hidden;
     background-color: grey;
-    height: 0;
+    max-height: 0;
     margin: 0;
     width: 50vw;
     opacity: .8;
