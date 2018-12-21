@@ -83,12 +83,13 @@ function collapseFunc() {
 }
 
 
-var slideIndex = [1,1,1,1];
-var slideClass = ["vpscreenshot", "vpsscreenshot", "vpascreenshot", "springscreenshot"]
+var slideIndex = [1,1,1,1,1];
+var slideClass = ["vpscreenshot", "vpsscreenshot", "vpascreenshot", "springscreenshot", "wecanreaditpic"]
 showDivs(1,0);
 showDivs(1,1);
 showDivs(1,2);
 showDivs(1,3);
+showDivs(1,4);
 
 function plusDivs(n, num) {
     showDivs(slideIndex[num] += n, num);
