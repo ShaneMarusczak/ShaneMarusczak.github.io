@@ -47,6 +47,7 @@ body{
 #aboutme,
 article,
 #main,
+#workexperience,
 #projects,
 #wrapper{
     min-height: 10em;
@@ -63,6 +64,7 @@ hr,{
 }
 
 #aboutme,
+#workexperience,
 #main,
 #projects{
     background: rgba(0, 0, 0, 0.7);
