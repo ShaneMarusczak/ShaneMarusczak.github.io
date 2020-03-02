@@ -46,7 +46,9 @@
 			if (this.hash !== "") {
 				event.preventDefault();
 
-				var {hash} = this;
+				var {
+					hash
+				} = this;
 
 				$("html, body").animate({
 					"scrollTop": $(hash).offset().top
