@@ -1,302 +1,380 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Professional Portfolio" />
+    <meta name="author" content="Shane Marusczak" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <title>Professional Portfolio</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Professional Portfolio" />
-	<meta name="author" content="Shane Marusczak" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="index-style-sheet.css" />
-	<title>Professional Portfolio</title>
-</head>
+  <body id="top">
+    <div id="wrapper">
+      <section id="main">
+        <header id="mainheader">
+          <h1>Shane Marusczak</h1>
+        </header>
+        <nav id="nav-bar">
+          <a href="#aboutme">About Me</a>
+          <a href="#workexperience">Work Experience</a>
+          <a href="#projects">Projects</a>
+        </nav>
+        <button id="nav-button">
+          Hide Navigation
+        </button>
+      </section>
 
-<body id="top">
-	<div id="wrapper">
-		<section id="main">
-			<header id="mainheader">
-				<h1>Shane Marusczak</h1>
-			</header>
-			<nav id="nav-bar">
-				<a href="#aboutme">About Me</a>
-				<a href="#workexperience">Work Experience</a>
-				<a href="#projects">Projects</a>
-			</nav>
-			<button id="nav-button" onclick="navDisappear()">
-				Hide Navigation
-			</button>
-		</section>
+      <section id="aboutme">
+        <header class="subheader">
+          <h2>About Me</h2>
+        </header>
+        <hr id="hr1" />
+        <img
+          id="image1"
+          src="./images/Shane Headshot 2.jpg"
+          alt="Self Portrait"
+        />
+        <button id="collapsible">Show Bio</button>
+        <p id="bio">
+          As a software developer, I am always looking for a new challenge.
+          Whether it be studying the newest technology or designing web pages, I
+          find there is always something new to learn. This has allowed me to be
+          proficient in a variety of technologies. Being from the greater
+          Cleveland area, I find a lot of my inspiration starts right here at
+          home. I am an avid runner and spend much of my free time going for
+          runs or bike rides. I find that this activity allows me to clear the
+          mind and reduce stress. This free time also gives me the chance to
+          think about my goals, and what I need to do to achieve them.
+        </p>
+        <h3>Skills</h3>
+        <div id="skills">
+          <span>C#</span>
+          <span>TypeScript</span>
+          <span>Angular 8</span>
+          <span>JavaScript</span>
+          <span>HTML5</span>
+          <span>Python</span>
+          <span>Unity</span>
+          <span>Web Api</span>
+          <span>CSS3</span>
+        </div>
+        <hr />
+        <button id="myBtn">Contact Information</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
 
-		<section id="aboutme">
-			<header class="subheader">
-				<h2>About Me</h2>
-			</header>
-			<hr id="hr1" />
-			<img id="image1" src="./images/Shane Headshot 2.jpg" alt="Self Portrait" />
-			<button id="collapsible" onclick="collapseFunc()">Show Bio</button>
-			<p id="bio">
-				As a software developer, I am always looking for a new challenge.
-				Whether it be studying the newest technology or designing web pages, I
-				find there is always something new to learn. This has allowed me to be
-				proficient in a variety of technologies. Being from the greater
-				Cleveland area, I find a lot of my inspiration starts right here at
-				home. I am an avid runner and spend much of my free time going for
-				runs or bike rides. I find that this activity allows me to clear the
-				mind and reduce stress. This free time also gives me the chance to
-				think about my goals, and what I need to do to achieve them.
-			</p>
-			<h3>Skills</h3>
-			<div id="skills">
-				<span>C#</span>
-				<span>TypeScript</span>
-				<span>Angular 8</span>
-				<span>JavaScript</span>
-				<span>HTML5</span>
-				<span>Python</span>
-				<span>Unity</span>
-				<span>Web Api</span>
-				<span>CSS3</span>
-			</div>
-			<hr />
-			<button id="myBtn">Contact Information</button>
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
-					<ul>
-						<li><a href="mailto:shane@marusczak.com">Email me</a></li>
-						<li><a href="https://github.com/ShaneMarusczak">github</a></li>
-					</ul>
-				</div>
-			</div>
-			<a class="back-to-top" href="#top">Back to Top</a>
-		</section>
+            <ul>
+              <li><a href="mailto:shane@marusczak.com">Email me</a></li>
+              <li><a href="https://github.com/ShaneMarusczak">github</a></li>
+            </ul>
+          </div>
+        </div>
+        <a class="back-to-top" href="#top">Back to Top</a>
+      </section>
 
-		<section id="workexperience">
-			<header class="subheader">
-				<h2>Work experience</h2>
-			</header>
-			<hr id="hr1" />
-			<article>
-				<h3>IT Apps Developer - Progressive Insurance</h3>
-				<p>October 2018 - Present</p>
-				<p>
-					Working on statewide compliance projects to create coding solutions that meet
-					business requirements
-				</p>
-			</article>
-			<article>
-				<h3>Multi-Product Agent - Progressive Insurance</h3>
-				<p>October 2017 - October 2018</p>
-				<p>
-					Assessing risk and determining the correct policy type for customers
-				</p>
-			</article>
-			<article>
-				<h3>Pharmacy Technician - Giant Eagle</h3>
-				<p>August 2014 - October 2017</p>
-				<p>
-					Processing incoming prescriptions and assisting the Pharmacist with
-					various duties
-				</p>
-			</article>
-		</section>
+      <section id="workexperience">
+        <header class="subheader">
+          <h2>Work experience</h2>
+        </header>
+        <hr id="hr1" />
+        <article>
+          <h3>IT Apps Developer - Progressive Insurance</h3>
+          <p>October 2018 - Present</p>
+          <p>
+            Working on statewide compliance projects to create coding solutions
+            that meet business requirements
+          </p>
+        </article>
+        <article>
+          <h3>Multi-Product Agent - Progressive Insurance</h3>
+          <p>October 2017 - October 2018</p>
+          <p>
+            Assessing risk and determining the correct policy type for customers
+          </p>
+        </article>
+        <article>
+          <h3>Pharmacy Technician - Giant Eagle</h3>
+          <p>August 2014 - October 2017</p>
+          <p>
+            Processing incoming prescriptions and assisting the Pharmacist with
+            various duties
+          </p>
+        </article>
+      </section>
 
-		<section id="projects">
-			<header class="subheader">
-				<h2>Projects</h2>
-			</header>
-			<hr id="hr1" />
+      <section id="projects">
+        <header class="subheader">
+          <h2>Projects</h2>
+        </header>
+        <hr id="hr1" />
 
-			<article>
-				<h3>We Can Read IT</h3>
-				<p>
-					Worked on a 4 person full-stack development team to create and
-					application that allows librarians to create reading groups of
-					students and assign those groups books to read and goals to reach.
-					Gained experience working in a team based environment.
-				</p>
-				<ul>
-					<li>Java</li>
-					<li>JavaScript</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Spring MVC</li>
-					<li>Thymeleaf</li>
-				</ul>
+        <article>
+          <h3>Games</h3>
+          <p>
+            Created a variety of games using JavaScript.
+          </p>
+          <ul>
+            <li>
+              Battleship - Generates a probabilty map of likely ship locations
+            </li>
+            <li>
+              Space Invaders - Uses Recursion and Promises to create a game loop
+            </li>
+            <li>Connect 4 - Uses MinMax algorithm with Alpha-Beta pruning</li>
+            <li>
+              Sudoku - Uses Recursion and Backtracking to solve and generate
+              Sudoku Puzzles
+            </li>
+          </ul>
 
-				<div id="wecanreaditpics">
-					<img class="wecanreaditpic" src="./images/we-can-read-it-1.PNG"
-						alt="Screenshot of We Can Read IT" />
-					<img class="wecanreaditpic" src="./images/we-can-read-it-2.PNG"
-						alt="Screenshot of We Can Read IT" />
-					<img class="wecanreaditpic" src="./images/we-can-read-it-3.PNG"
-						alt="Screenshot of We Can Read IT" />
-					<img class="wecanreaditpic" src="./images/we-can-read-it-4.PNG"
-						alt="Screenshot of We Can Read IT" />
-				</div>
+          <a href="https://marusczak.com/Games-Home-Page" target="_blank"
+            >Play the games here!</a
+          >
+        </article>
 
-				<div class="directional">
-					<button class="virtual-pet-display-left" onclick="plusDivs(-1,4)">
-						&#10094;
-					</button>
-					<button class="virtual-pet-display-right" onclick="plusDivs(1,4)">
-						&#10095;
-					</button>
-				</div>
+        <article>
+          <h3>We Can Read IT</h3>
+          <p>
+            Worked on a 4 person full-stack development team to create and
+            application that allows librarians to create reading groups of
+            students and assign those groups books to read and goals to reach.
+            Gained experience working in a team based environment.
+          </p>
+          <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Spring MVC</li>
+            <li>Thymeleaf</li>
+          </ul>
 
-				<a id="WECANREADIT" href="https://we-can-read-it.herokuapp.com">We Can Read IT</a>
-				<p>
-					The site is hosted on a free Heroku cloud server, give it a moment
-					to load.
-				</p>
-				<a href="https://github.com/flex-cle-fall-2018/we-can-read-it">
-					Github Repo</a>
-			</article>
+          <div id="wecanreaditpics">
+            <img
+              class="wecanreaditpic"
+              src="./images/we-can-read-it-1.PNG"
+              alt="Screenshot of We Can Read IT"
+            />
+            <img
+              class="wecanreaditpic"
+              src="./images/we-can-read-it-2.PNG"
+              alt="Screenshot of We Can Read IT"
+            />
+            <img
+              class="wecanreaditpic"
+              src="./images/we-can-read-it-3.PNG"
+              alt="Screenshot of We Can Read IT"
+            />
+            <img
+              class="wecanreaditpic"
+              src="./images/we-can-read-it-4.PNG"
+              alt="Screenshot of We Can Read IT"
+            />
+          </div>
 
-			<article>
-				<h3>Virtual Pet</h3>
-				<p>
-					Created an app to interact with a class to simulate taking care of
-					your own virtual pet. Each time you play, the pet can take on
-					slightly different characteristics. If you do not care for your pet,
-					it will continually get more unhappy and might run away.
-				</p>
-				<ul>
-					<li>Java</li>
-				</ul>
-				<div id="vppictures">
-					<img class="vpscreenshot" src="./images/virtual-pet.png" alt="Screenshot of Virtual Pet" />
-					<img class="vpscreenshot" src="./images/virtual-pet-2.png" alt="Screenshot of Virtual Pet" />
-					<img class="vpscreenshot" src="./images/virtual-pet-3.png" alt="Screenshot of Virtual Pet" />
-				</div>
+          <div class="directional">
+            <button id="readLeft" class="changebtn">
+              &#10094;
+            </button>
+            <button id="readRight" class="changebtn">
+              &#10095;
+            </button>
+          </div>
 
-				<div class="directional">
-					<button class="virtual-pet-display-left" onclick="plusDivs(-1,0)">
-						&#10094;
-					</button>
-					<button class="virtual-pet-display-right" onclick="plusDivs(1,0)">
-						&#10095;
-					</button>
-				</div>
-				<a href="https://github.com/ShaneMarusczak/virtual-pet">
-					Github Repo</a>
-			</article>
+          <a id="WECANREADIT" href="https://we-can-read-it.herokuapp.com"
+            >We Can Read IT</a
+          >
+          <p>
+            The site is hosted on a free Heroku cloud server, give it a moment
+            to load.
+          </p>
+          <a href="https://github.com/flex-cle-fall-2018/we-can-read-it">
+            Github Repo</a
+          >
+        </article>
 
-			<article>
-				<h3>Virtual Pet Shelter</h3>
-				<p>
-					Expanded the Virtual Pet project class to include another class that
-					uses collections to manage multiple pets.
-				</p>
-				<ul>
-					<li>Java</li>
-				</ul>
+        <article>
+          <h3>Virtual Pet</h3>
+          <p>
+            Created an app to interact with a class to simulate taking care of
+            your own virtual pet. Each time you play, the pet can take on
+            slightly different characteristics. If you do not care for your pet,
+            it will continually get more unhappy and might run away.
+          </p>
+          <ul>
+            <li>Java</li>
+          </ul>
+          <div id="vppictures">
+            <img
+              class="vpscreenshot"
+              src="./images/virtual-pet.png"
+              alt="Screenshot of Virtual Pet"
+            />
+            <img
+              class="vpscreenshot"
+              src="./images/virtual-pet-2.png"
+              alt="Screenshot of Virtual Pet"
+            />
+            <img
+              class="vpscreenshot"
+              src="./images/virtual-pet-3.png"
+              alt="Screenshot of Virtual Pet"
+            />
+          </div>
 
-				<div id="vpspictures">
-					<img class="vpsscreenshot" src="./images/virtual-pet-shelter.png"
-						alt="Screenshot of Virtual Pet Shelter" />
-					<img class="vpsscreenshot" src="./images/virtual-pet-shelter-2.png"
-						alt="Screenshot of Virtual Pet Shelter" />
-					<img class="vpsscreenshot" src="./images/virtual-pet-shelter-3.png"
-						alt="Screenshot of Virtual Pet Shelter" />
-				</div>
-				<div class="directional">
-					<button class="virtual-pet-shelter-display-left" onclick="plusDivs(-1,1)">
-						&#10094;
-					</button>
-					<button class="virtual-pet-shelter-display-right" onclick="plusDivs(1,1)">
-						&#10095;
-					</button>
-				</div>
-				<a href="https://github.com/ShaneMarusczak/new-virtual-pet-shelter">Github Repo</a>
-			</article>
+          <div class="directional">
+            <button id="vpLeft" class="changebtn">
+              &#10094;
+            </button>
+            <button id="vpRight" class="changebtn">
+              &#10095;
+            </button>
+          </div>
+          <a href="https://github.com/ShaneMarusczak/virtual-pet">
+            Github Repo</a
+          >
+        </article>
 
-			<article>
-				<h3>Virtual Pets Amok</h3>
-				<p>
-					Expanded the Virtual Pet Shelter project to include abstract classes
-					and interfaces to allow for multiple types of pets that all have
-					different needs and behaviours. Also expanded the types of method
-					calls in the app to not allow the types of pets to call each others
-					methods.
-				</p>
-				<ul>
-					<li>Java</li>
-				</ul>
-				<div id="vpapictures">
-					<img class="vpascreenshot" src="./images/virtual-pet-amok.png"
-						alt="Screenshot of Virtual Pets Amok" />
-					<img class="vpascreenshot" src="./images/virtual-pet-amok-2.png"
-						alt="Screenshot of Virtual Pets Amok" />
-					<img class="vpascreenshot" src="./images/virtual-pet-amok-3.png"
-						alt="Screenshot of Virtual Pets Amok" />
-					<img class="vpascreenshot" src="./images/virtual-pet-amok-4.png"
-						alt="Screenshot of Virtual Pets Amok" />
-				</div>
-				<div class="directional">
-					<button class="virtual-pet-amok-display-left" onclick="plusDivs(-1,2)">
-						&#10094;
-					</button>
-					<button class="virtual-pet-amok-display-right" onclick="plusDivs(1,2)">
-						&#10095;
-					</button>
-				</div>
-				<a href="https://github.com/ShaneMarusczak/virtual-pets-amok">Github Repo</a>
-			</article>
+        <article>
+          <h3>Virtual Pet Shelter</h3>
+          <p>
+            Expanded the Virtual Pet project class to include another class that
+            uses collections to manage multiple pets.
+          </p>
+          <ul>
+            <li>Java</li>
+          </ul>
 
-			<article>
-				<h3>Review Site Full Stack</h3>
-				<p>
-					Used Spring framework to wire up a webserver using Java classes to
-					fill in the content.
-				</p>
-				<ul>
-					<li>Java</li>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>Thymeleaf</li>
-					<li>JPA</li>
-				</ul>
-				<div id="springpictures">
-					<img class="springscreenshot" src="./images/review-site.png" alt="Spring Logo" />
-					<img class="springscreenshot" src="./images/review-site-2.png" alt="Spring Logo" />
-					<img class="springscreenshot" src="./images/review-site-3.png" alt="Spring Logo" />
-				</div>
-				<div class="directional">
-					<button class="spring-display-left" onclick="plusDivs(-1,3)">
-						&#10094;
-					</button>
-					<button class="spring-display-right" onclick="plusDivs(1,3)">
-						&#10095;
-					</button>
-				</div>
-				<a href="https://github.com/ShaneMarusczak/reviews-site-full-stack">Github Repo</a>
-			</article>
+          <div id="vpspictures">
+            <img
+              class="vpsscreenshot"
+              src="./images/virtual-pet-shelter.png"
+              alt="Screenshot of Virtual Pet Shelter"
+            />
+            <img
+              class="vpsscreenshot"
+              src="./images/virtual-pet-shelter-2.png"
+              alt="Screenshot of Virtual Pet Shelter"
+            />
+            <img
+              class="vpsscreenshot"
+              src="./images/virtual-pet-shelter-3.png"
+              alt="Screenshot of Virtual Pet Shelter"
+            />
+          </div>
+          <div class="directional">
+            <button id="shelterLeft" class="changebtn">
+              &#10094;
+            </button>
+            <button id="shelterRight" class="changebtn">
+              &#10095;
+            </button>
+          </div>
+          <a href="https://github.com/ShaneMarusczak/new-virtual-pet-shelter"
+            >Github Repo</a
+          >
+        </article>
 
-			<article>
-				<h3>Battleship</h3>
-				<p>
-					Created a battleship game where you can play against a computer
-					player.
-				</p>
-				<ul>
-					<li>JavaScript</li>
-					<li>HTML</li>
-					<li>CSS</li>
-				</ul>
+        <article>
+          <h3>Virtual Pets Amok</h3>
+          <p>
+            Expanded the Virtual Pet Shelter project to include abstract classes
+            and interfaces to allow for multiple types of pets that all have
+            different needs and behaviours. Also expanded the types of method
+            calls in the app to not allow the types of pets to call each others
+            methods.
+          </p>
+          <ul>
+            <li>Java</li>
+          </ul>
+          <div id="vpapictures">
+            <img
+              class="vpascreenshot"
+              src="./images/virtual-pet-amok.png"
+              alt="Screenshot of Virtual Pets Amok"
+            />
+            <img
+              class="vpascreenshot"
+              src="./images/virtual-pet-amok-2.png"
+              alt="Screenshot of Virtual Pets Amok"
+            />
+            <img
+              class="vpascreenshot"
+              src="./images/virtual-pet-amok-3.png"
+              alt="Screenshot of Virtual Pets Amok"
+            />
+            <img
+              class="vpascreenshot"
+              src="./images/virtual-pet-amok-4.png"
+              alt="Screenshot of Virtual Pets Amok"
+            />
+          </div>
+          <div class="directional">
+            <button id="amokLeft" class="changebtn">
+              &#10094;
+            </button>
+            <button id="amokRight" class="changebtn">
+              &#10095;
+            </button>
+          </div>
+          <a href="https://github.com/ShaneMarusczak/virtual-pets-amok"
+            >Github Repo</a
+          >
+        </article>
 
-				<a href="https://marusczak.com/Battleship-JS">Play the game here!</a>
-			</article>
+        <article>
+          <h3>Review Site Full Stack</h3>
+          <p>
+            Used Spring framework to wire up a webserver using Java classes to
+            fill in the content.
+          </p>
+          <ul>
+            <li>Java</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Thymeleaf</li>
+            <li>JPA</li>
+          </ul>
+          <div id="springpictures">
+            <img
+              class="springscreenshot"
+              src="./images/review-site.png"
+              alt="Spring Logo"
+            />
+            <img
+              class="springscreenshot"
+              src="./images/review-site-2.png"
+              alt="Spring Logo"
+            />
+            <img
+              class="springscreenshot"
+              src="./images/review-site-3.png"
+              alt="Spring Logo"
+            />
+          </div>
+          <div class="directional">
+            <button id="springLeft" class="changebtn">
+              &#10094;
+            </button>
+            <button id="springRight" class="changebtn">
+              &#10095;
+            </button>
+          </div>
+          <a href="https://github.com/ShaneMarusczak/reviews-site-full-stack"
+            >Github Repo</a
+          >
+        </article>
+        <a class="back-to-top" href="#top">Back to Top</a>
+      </section>
 
-			<a class="back-to-top" href="#top">Back to Top</a>
-		</section>
-
-		<footer>
-			<p>Last Updated on March 1, 2020</p>
-			<p>Thanks for stopping by!</p>
-		</footer>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="script.js"></script>
-</body>
-
+      <footer>
+        <p>Last Updated on October 16, 2020</p>
+        <p>Thanks for stopping by!</p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javaScript" src="js/script.min.js"></script>
+  </body>
 </html>
