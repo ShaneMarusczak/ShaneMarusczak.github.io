@@ -274,6 +274,10 @@ footer {
   font-size: large;
 }
 
+.picture {
+  max-width: 80vw;
+}
+
 .block {
   display: block;
 }

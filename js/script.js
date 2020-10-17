@@ -1,13 +1,11 @@
 "use strict";
 (function () {
   let modal = document.getElementById("myModal");
-  let btn = document.getElementById("myBtn");
-  let span = document.getElementsByClassName("close")[0];
 
-  btn.addEventListener("click", function () {
+  document.getElementById("myBtn").addEventListener("click", function () {
     modal.classList.add("block");
   });
-  span.addEventListener("click", function () {
+  document.getElementById("modalClose").addEventListener("click", function () {
     modal.classList.remove("block");
   });
   window.addEventListener("click", function () {
