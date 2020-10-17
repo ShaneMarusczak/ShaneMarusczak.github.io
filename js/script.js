@@ -40,9 +40,7 @@
       });
     });
   });
-})();
 
-(function () {
   function navDisappear() {
     let navButton = document.getElementById("nav-bar");
     let navButtonText = document.getElementById("nav-button");
