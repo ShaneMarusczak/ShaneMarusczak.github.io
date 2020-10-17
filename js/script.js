@@ -4,21 +4,21 @@
   let btn = document.getElementById("myBtn");
   let span = document.getElementsByClassName("close")[0];
 
-  btn.onclick = function () {
-    modal.style.display = "block";
-  };
-  span.onclick = function () {
-    modal.style.display = "none";
-  };
-  window.onclick = function (event) {
+  btn.addEventListener("click", function () {
+    modal.classList.add("block");
+  });
+  span.addEventListener("click", function () {
+    modal.classList.remove("block");
+  });
+  window.addEventListener("click", function () {
     if (event.target == modal) {
-      modal.style.display = "none";
+      modal.classList.remove("block");
     }
-  };
+  });
 
   const fadeElements = document.querySelectorAll("#wrapper > *");
 
-  window.onscroll = function () {
+  window.addEventListener("scroll", function () {
     for (const elem of fadeElements) {
       if (elem.offsetTop + elem.offsetHeight < window.scrollY + 150) {
         elem.classList.add("fadeOut");
@@ -26,25 +26,18 @@
         elem.classList.remove("fadeOut");
       }
     }
-  };
+  });
 
-  $(document).ready(function () {
-    $("a").on("click", function (event) {
-      if (this.hash !== "") {
-        event.preventDefault();
+  document.querySelectorAll(".pageNav").forEach(function (elem) {
+    elem.addEventListener("click", function (e) {
+      e.preventDefault();
+      const href = this.getAttribute("href");
+      const offsetTop = document.querySelector(href).offsetTop;
 
-        let { hash } = this;
-
-        $("html, body").animate(
-          {
-            scrollTop: $(hash).offset().top,
-          },
-          800,
-          function () {
-            window.location.hash = hash;
-          }
-        );
-      }
+      scroll({
+        top: offsetTop,
+        behavior: "smooth",
+      });
     });
   });
 })();
@@ -53,11 +46,11 @@
   function navDisappear() {
     let navButton = document.getElementById("nav-bar");
     let navButtonText = document.getElementById("nav-button");
-    if (navButton.style.display === "none") {
-      navButton.style.display = "block";
+    if (navButton.classList.contains("hide")) {
+      navButton.classList.remove("hide");
       navButtonText.textContent = "Hide Navigation";
     } else {
-      navButton.style.display = "none";
+      navButton.classList.add("hide");
       navButtonText.textContent = "Show Navigation";
     }
   }

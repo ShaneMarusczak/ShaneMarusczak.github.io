@@ -272,3 +272,11 @@ footer {
 #WECANREADIT {
   font-size: large;
 }
+
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
