@@ -1,5 +1,8 @@
 "use strict";
 (function () {
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
   let modal = document.getElementById("myModal");
 
   document.getElementById("myBtn").addEventListener("click", function () {
@@ -52,15 +55,24 @@
   }
   document.getElementById("nav-button").addEventListener("click", navDisappear);
 
+  let bioIsClicakble = true;
+
   function collapseFunc() {
-    let collapseButton = document.getElementById("bio");
-    let collapseButtonText = document.getElementById("collapsible");
-    if (collapseButton.classList.contains("open")) {
-      collapseButton.classList.remove("open");
-      collapseButtonText.textContent = "Show Bio";
-    } else {
-      collapseButton.classList.add("open");
-      collapseButtonText.textContent = "Hide Bio";
+    if (bioIsClicakble) {
+      bioIsClicakble = false;
+      let bioContainer = document.getElementById("bioContainer");
+      let collapseButtonText = document.getElementById("collapsible");
+      if (bioContainer.classList.contains("open")) {
+        bioContainer.classList.remove("open");
+        sleep(775).then(function () {
+          collapseButtonText.textContent = "Show Bio";
+          bioIsClicakble = true;
+        });
+      } else {
+        bioContainer.classList.add("open");
+        collapseButtonText.textContent = "Hide Bio";
+        bioIsClicakble = true;
+      }
     }
   }
   document

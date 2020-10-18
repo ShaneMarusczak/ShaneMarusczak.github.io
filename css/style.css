@@ -142,32 +142,35 @@ footer {
 }
 
 #nav-button:hover {
-  color: cadetblue;
+  transition: 500ms;
+  color: azure;
 }
 
 #collapsible {
-  background-color: black;
-  color: #444;
+  background-color: darkgrey;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 75vw;
   border: none;
   text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 5px;
   margin-bottom: 10px;
   width: 50vw;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 5px;
 }
 
 .active,
 #collapsible:hover {
+  transition: 500ms;
   opacity: 1;
+  color: azure;
 }
 
-#bio {
+#bioContainer {
   padding: 0 18px;
   overflow: hidden;
   background-color: grey;
@@ -180,7 +183,7 @@ footer {
   height: auto;
 }
 
-#bio.open {
+#bioContainer.open {
   max-height: 50vh;
   overflow-y: auto;
 }
