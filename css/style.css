@@ -142,8 +142,7 @@ footer {
 }
 
 #nav-button:hover {
-  transition: 500ms;
-  color: azure;
+  color: cadetblue;
 }
 
 #collapsible {
@@ -165,7 +164,6 @@ footer {
 
 .active,
 #collapsible:hover {
-  transition: 500ms;
   opacity: 1;
   color: azure;
 }
