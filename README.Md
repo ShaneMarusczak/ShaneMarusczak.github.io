@@ -1,3 +1,3 @@
 # Porfolio Home Page
 
-Visit this website at https://www.marusczak.com
+Visit this website at https://marusczak.com/
