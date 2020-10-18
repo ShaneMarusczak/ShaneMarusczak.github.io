@@ -270,7 +270,11 @@ footer {
 }
 
 #wecanreaditpics {
-  height: 830px;
+  height: 600px;
+}
+
+#bigWCRIimage {
+  max-height: 600px;
 }
 
 #WECANREADIT {
