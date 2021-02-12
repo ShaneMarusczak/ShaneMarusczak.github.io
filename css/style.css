@@ -290,3 +290,7 @@ footer {
 .hide {
   display: none;
 }
+
+#gamesLink {
+  font-size: large;
+}
