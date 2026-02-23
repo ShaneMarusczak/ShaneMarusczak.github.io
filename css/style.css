@@ -144,12 +144,14 @@ a {
               0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-decoration: none;
   color: inherit;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 500ms;
   border-left: 4px solid black;
 }
 
 .card:hover,
 .card.visible:hover {
+  background-color: lightgray;
+  cursor: pointer;
   transform: translateY(-2px);
 }
 
