@@ -28,4 +28,16 @@
     });
   }
 
+  document.querySelectorAll(".card").forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      item.classList.add("boxShadow");
+    });
+  });
+
+  document.querySelectorAll(".card").forEach((item) => {
+    item.addEventListener("mouseleave", () => {
+      item.classList.remove("boxShadow");
+    });
+  });
+
 })();
