@@ -34,57 +34,22 @@ a {
   transition: color 0.2s;
 }
 
-/* --- Nav --- */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  padding: 0 1.5rem;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s, backdrop-filter 0.3s, box-shadow 0.3s;
+/* --- GitHub Icon --- */
+#githubicon {
+  position: absolute;
+  top: 40px;
+  right: 6vw;
+  width: 60px;
+  height: 60px;
+  transition: 1.5s;
+  z-index: 0;
+  background-color: transparent;
+  border-radius: 100px;
 }
 
-.nav.scrolled {
-  background-color: rgba(176, 196, 222, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
-}
-
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 56rem;
-}
-
-.nav-name {
-  font-family: "Roboto Mono", monospace;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #1a1a1a;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.25rem;
-  font-family: "Roboto Mono", monospace;
-  font-size: 0.8rem;
-}
-
-.nav-links a {
-  color: #444;
-}
-
-.nav-links a:hover {
-  color: #1a1a1a;
-  text-decoration: underline;
+#githubicon:hover {
+  transform: translateY(-5px);
+  background-color: azure;
 }
 
 /* --- Layout --- */
@@ -102,7 +67,7 @@ a {
   justify-content: center;
   text-align: center;
   min-height: 60vh;
-  padding-top: 56px;
+  padding-top: 1.5rem;
 }
 
 .hero-name {
@@ -183,8 +148,9 @@ a {
   border-left: 4px solid black;
 }
 
-.card:hover {
-  transform: translateY(-4px);
+.card:hover,
+.card.visible:hover {
+  transform: translateY(-2px);
 }
 
 .card-blue {
@@ -328,14 +294,6 @@ footer a:hover {
 @media (max-width: 640px) {
   .projects {
     grid-template-columns: 1fr;
-  }
-
-  .nav-name {
-    font-size: 0.8rem;
-  }
-
-  .nav-links {
-    font-size: 0.75rem;
   }
 
   .card {

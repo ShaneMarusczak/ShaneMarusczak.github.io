@@ -28,17 +28,4 @@
     });
   }
 
-  // --- Nav Scroll State ---
-  const nav = document.getElementById("nav");
-
-  const updateNav = () => {
-    if (window.scrollY > 20) {
-      nav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
-    }
-  };
-
-  window.addEventListener("scroll", updateNav, { passive: true });
-  updateNav();
 })();
