@@ -1,3 +1,3 @@
-# Porfolio Home Page
+# Personal Landing Page
 
-Visit this website at https://marusczak.com/
+Visit at https://marusczak.com/
